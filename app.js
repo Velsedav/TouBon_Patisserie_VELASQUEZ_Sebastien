@@ -8,7 +8,7 @@ fetch("data.json")
     console.log(dataBase);
     // Ici je vois toute ma base de données en console
     // Puis ci-dessous Je boucle sur le teableau de données
-    afficher(dataBase.services, dataBase.produits, dataBase.temoignages, dataBase.avantagesClients, dataBase.texteAppelAction);
+    afficher(dataBase.services, dataBase.produits, dataBase.temoignages, dataBase.avantagesClients, dataBase.texteAppelAction, dataBase.phraseAccroche, dataBase.nomCommercial);
   });
 
 // Rôle : Afficher le contenu du data.JSON
@@ -16,7 +16,7 @@ fetch("data.json")
 //  Retourne : Rien car elle affiche
 
 // dataBase.service, dataBase.produits, dataBase.temoignages sont des tableaux
-function afficher(services, produits, temoignages, avantagesClients) {
+function afficher(services, produits, temoignages, avantagesClients, texteAppelAction, phraseAccroche, nomCommercial) {
   let variableServices = "";
   services.forEach((laDataServices) => {
     variableServices += `
@@ -64,11 +64,13 @@ function afficher(services, produits, temoignages, avantagesClients) {
   }
   // console.log(variableAvantagesClients);
 
-  // let variableTexteAppelAction = `${dataBase.texteAppelAction[0]}`;
-  // console.log(variableTexteAppelAction);
-  console.log(database.texteAppelAction);
-  
-  
-  
-  
+  let variableTexteAppelAction = `${texteAppelAction}`;
+  console.log(variableTexteAppelAction);
+
+  let variablePhraseAccroche = `${phraseAccroche}`
+  console.log(variablePhraseAccroche);
+
+  let variableNomCommercial = `${nomCommercial}`
+  console.log(variableNomCommercial);
+
 }

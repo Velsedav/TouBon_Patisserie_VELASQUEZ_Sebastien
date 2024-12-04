@@ -27,7 +27,10 @@ html {
   }
   img {
     width: 150px;
+    object-fit: cover;
   }
+
+
   /* Debut Team Positionnement */
   .Rltv{
       position: relative;
@@ -56,3 +59,12 @@ html {
     z-index: 10;
   }
   /* Fin Team positionnement */
+
+
+  /* Tailles */
+  .vh50 {
+    height: 50vh;
+  }
+  .vh100 {
+    height: 100vh;
+  }
