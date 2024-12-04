@@ -9,11 +9,24 @@ html {
   p {
     font-size: 1.6rem;
   }
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
   a {
     text-decoration: none;
   }
   li {
     list-style-type: none;
+  }
+  img {
+    width: 150px;
   }
   /* Debut Team Positionnement */
   .Rltv{
@@ -37,5 +50,9 @@ html {
   }
   .AlgnItmCntr{
       align-items: center;
+  }
+  .Fxd{
+    position: fixed;
+    z-index: 10;
   }
   /* Fin Team positionnement */
