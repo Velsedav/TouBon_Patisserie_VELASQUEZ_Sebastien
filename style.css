@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap');
+
 html {
   font-size: 62.5%;
 }
@@ -8,12 +10,6 @@ html {
 }
 p {
   font-size: 1.6rem;
-}
-h1 {
-  font-size: 2.6rem;
-  font-weight: 800;
-  color: #570026;
-  color: white;
 }
 h2 {
   font-size: 2.4rem;
@@ -121,17 +117,32 @@ header img {
   height: 100%;
   object-fit: cover;
 }
-.Hero div {
-  background-color: rgba(42, 38, 38, 0.347);
-  width: 50%;
-  /* absolute est par rapport à un relatif ou relatif le plus proche */
+.Hero div{
+  background-color: rgba(255, 229, 241, 0.934);
+  width: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 3rem 2.4rem;
+  padding: 3rem 1rem;
   border-radius: 0.8rem;
   backdrop-filter: blur(6px);
-  /* FLOUTER */
 }
+.Hero h2{
+ color: #570026;
+ font-family: "Hepta Slab", serif;
+ font-optical-sizing: auto;
+ font-weight: 400;
+ font-style: normal;
+}
+.Hero h1{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #570026;
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 1.6rem;
+ }
