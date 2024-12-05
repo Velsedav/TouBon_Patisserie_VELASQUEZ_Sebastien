@@ -39,7 +39,7 @@ function AfficheUnProduit(produit) {
             <p>${produit.description}</p>
           </div>
         </div>`;
-  document.querySelector("#Produit").innerHTML += template;
+  document.querySelector("#FlxProduit").innerHTML += template;
 }
 function AfficheUnTemoignages(temoignages) {
   // role affiche un temoignage dans la page dans la div qui a l'id temoignage
@@ -75,7 +75,7 @@ function AfficheAvantagesClients(avantagesClients) {
   // parametre: Le "avantagesClients" a afficher
   // retour rien
   let templateAvantagesClients = `
-     <div class="Card">
+     <div class="Card JstfCntr FlxColumn">
      <p>${avantagesClients}</p>
    </div>
      `;
@@ -88,7 +88,7 @@ function AfficheLeHero(nomCommercial, phraseAccroche, texteAppelAction) {
   <div>
    <h1>${nomCommercial}</h1>
    <h2>${phraseAccroche}</h2>
-   <a href="#Produit" class ="BtnNav">${texteAppelAction}</a>
+   <a href="#Produit" class ="BtnCTA">${texteAppelAction}</a>
   </div>
 `;
   document.querySelector("#idHero").innerHTML += templateHero;

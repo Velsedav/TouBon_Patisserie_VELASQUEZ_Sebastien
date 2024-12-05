@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
   font-size: 62.5%;
@@ -14,13 +14,13 @@ p {
   font-size: 1.6rem;
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 h4 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 a {
   text-decoration: none;
@@ -46,10 +46,10 @@ header img {
 .FontClrWht {
   color: white;
 }
-.ColorGirlie{
+.ColorGirlie {
   color: #f4dbe5;
 }
-.BckGrndReview{
+.BckGrndReview {
   background-color: #ffc98b;
 }
 /* #FFF7D1
@@ -97,6 +97,10 @@ header img {
 .displayBlock {
   display: inline-block;
 }
+.FlxColumn {
+  display: flex;
+  flex-direction: column;
+}
 /* Fin Team positionnement */
 
 /* Dimensions */
@@ -116,8 +120,8 @@ header img {
   width: 25%;
 }
 .VrtclPddng {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 /* Classes composantes */
 .BtnNav {
@@ -126,7 +130,9 @@ header img {
   color: white;
   border-radius: 2rem;
 }
-
+.BtnNav:hover {
+  background-color: #faa94c;
+}
 .Hero {
   width: 100%;
   height: 100vh;
@@ -140,12 +146,13 @@ header img {
 .Hero div {
   background-color: rgba(255, 229, 241, 0.934);
   width: 40%;
+  max-width: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 4rem 2rem;
   border-radius: 0.8rem;
   backdrop-filter: blur(6px);
 }
@@ -155,6 +162,7 @@ header img {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 3.2rem;
 }
 .Hero h1 {
   font-size: 2rem;
@@ -172,40 +180,49 @@ header img {
   color: #f4dbe5;
   text-align: center;
 }
+.BtnCTA {
+  padding: 0.8rem 1.6rem;
+  background-color: #ffc98b;
+  color: white;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+.BtnCTA:hover {
+  background-color: #faa94c;
+}
 
-  /* Section produits */
-.h2Prod{
+/* Section produits */
+.h2Prod {
   color: #570026;
   text-align: center;
   margin-bottom: 2rem;
 }
-.ContainerProd{
+.ContainerProd {
   width: 500px;
   height: 500px;
-  padding: 1rem 6rem;
+  padding: 2rem;
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+  margin-right: 12rem;
 }
-.ContainerProd img{
+.ContainerProd img {
   border-radius: 0.8rem;
 }
-.DescriptionProd{
+.DescriptionProd {
   position: absolute;
-  top: 55%;
-  left: 75%;
+  top: 65%;
+  left: 72%;
   z-index: 1;
   width: 300px;
   background-color: #ffc98b;
   padding: 1.6rem;
   border-radius: 0.8rem;
-  transform: translate(-25%,-25%);
-
+  transform: translate(-25%, -25%);
 }
-.BckGrndProd{
+.BckGrndProd {
   background-color: #ffc98b;
 }
 
@@ -213,30 +230,37 @@ header img {
 .CardService {
   width: 256px;
   color: #f4dbe5;
+  padding: 1.6rem;
 }
-.CardService img{
+.CardService img {
   width: 100%;
   object-fit: cover;
 }
-.CardService h4{
+.CardService h4 {
   color: #f4dbe5;
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
 }
 
 /* Section avis clients */
-.CardAvis{
+.CardAvis {
   width: 256px;
   border-radius: 0.8rem;
+  padding: 1.6rem;
 }
-.CardAvis p{
+.CardAvis p {
   padding: 1rem;
 }
 
 /* Section Footer */
-footer img{
+footer img {
   width: 200px;
+  border-radius: 40rem;
 }
-footer{
+footer {
+  color: #f4dbe5;
+}
+footer a {
+  font-size: 1.6rem;
   color: #f4dbe5;
 }
