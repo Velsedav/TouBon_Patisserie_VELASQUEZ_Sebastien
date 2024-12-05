@@ -14,10 +14,6 @@ fetch("data.json")
     dataBase.produits.forEach(p=>{
       AfficheUnProduit(p)
     })
-    // j'affiche les temoignages:
-    dataBase.temoignages.forEach(t=>{
-      AfficheUnTemoignage(t)
-    })
   });
 
 // Rôle : Afficher le contenu du data.JSON
@@ -61,24 +57,6 @@ function afficher(services, produits, temoignages, avantagesClients, texteAppelA
     `;
   });
   // console.log(variableProduits);
-  function AfficheUnProduit(produit){
-    // role affiche un produit dans la page dans la div qui a l'id Produit
-    // parametre: Le produit a afficher
-    // retour rien
-    let template = `<div class="Rltv ContainerProd">
-            <img
-              src="${produit.imageUrl}"
-              alt=""
-              width="300px"
-            />
-            <div class="DescriptionProd BckGrndProd">
-              <h3>${produit.nom}</h3>
-              <p>${produit.description}</p>
-            </div>
-          </div>`
-    document.querySelector("#Produit").innerHTML += template
-  }
-
 
   let variableTemoignages = "";
   temoignages.forEach((laDataTemoignages) => {
@@ -90,33 +68,18 @@ function afficher(services, produits, temoignages, avantagesClients, texteAppelA
     `;
   });
   // console.log(variableTemoignages);
-  function AfficheUnTemoignage(temoignages) {
-        // role affiche un temoignage dans la page dans la div qui a l'id temoignage
-    // parametre: Le temoignage a afficher
-    // retour rien
-    let templateTemoignages =`
-            <div class="Flx SpcArnd">
-          <!-- 1 avis client -->
-          <div class="BckGrndReview CardAvis">
-            <!-- Prenom Experience Avis Note -->
-            <p>${temoignages.prenom}</p>
-            <p>${temoignages.typeExperience}</p>
-            <p>${temoignages.commentaire}</p>
-            <p>${temoignages.note}</p>
-          </div>
-        </div>
-    `
-  }
   let templateTemoignages = document.querySelector('#sectionAvisClients').innerHTML+=`
+          <h3 class="TxtAlgnCntr Pddng32">Nos Clients en parlent le mieux</h3>
         <div class="Flx SpcArnd">
           <!-- 1 avis client -->
           <div class="BckGrndReview CardAvis">
             <!-- Prenom Experience Avis Note -->
-            <p>{$}</p>
+            <p>{$prenom}</p>
             <p>{$typeExperience}</p>
             <p>{$commentaire}</p>
             <p>{$note}</p>
           </div>
+          
         </div>
   `;
   
@@ -145,3 +108,20 @@ function afficher(services, produits, temoignages, avantagesClients, texteAppelA
 
 }
 
+function AfficheUnProduit(produit){
+  // role affiche un produit dans la page dans la div qui a l'id Produit
+  // parametre: Le produit a afficher
+  // retour rien
+  let template = `<div class="Rltv ContainerProd">
+          <img
+            src="${produit.imageUrl}"
+            alt=""
+            width="300px"
+          />
+          <div class="DescriptionProd BckGrndProd">
+            <h3>${produit.nom}</h3>
+            <p>${produit.description}</p>
+          </div>
+        </div>`
+  document.querySelector("#Produit").innerHTML += template
+}
