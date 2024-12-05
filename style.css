@@ -67,6 +67,9 @@ header img {
 .SpcArnd {
   justify-content: space-around;
 }
+.SpcEvnly{
+  justify-content: space-evenly;
+}
 .JstfCntr{
   justify-content: center;
 }
@@ -98,11 +101,23 @@ header img {
 .Pddng32{
   padding: 2rem;
 }
-
+.Wdth20Prcnt{
+  width: 25%;
+}
 /* Classes composantes */
 .BtnNav{
   padding: 0.8rem 1.6rem;
   background-color: #FFD09B;
   color: white;
   border-radius: 2rem;
+}
+.Hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.Hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
