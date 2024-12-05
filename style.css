@@ -8,6 +8,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", serif;
 }
 p {
   font-size: 1.6rem;
@@ -32,7 +33,7 @@ img {
   object-fit: cover;
 }
 header img {
-  width: 100px;
+  width: 200px;
 }
 
 /* Couleurs */
@@ -44,6 +45,12 @@ header img {
 }
 .FontClrWht {
   color: white;
+}
+.ColorGirlie{
+  color: #f4dbe5;
+}
+.BckGrndReview{
+  background-color: #ffc98b;
 }
 /* #FFF7D1
 #FFB0B0
@@ -204,9 +211,32 @@ header img {
 
 /* Section Services */
 .CardService {
-  max-width: 300px;
+  width: 256px;
+  color: #f4dbe5;
 }
 .CardService img{
-  width: fit-content;
+  width: 100%;
   object-fit: cover;
+}
+.CardService h4{
+  color: #f4dbe5;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+/* Section avis clients */
+.CardAvis{
+  width: 256px;
+  border-radius: 0.8rem;
+}
+.CardAvis p{
+  padding: 1rem;
+}
+
+/* Section Footer */
+footer img{
+  width: 200px;
+}
+footer{
+  color: #f4dbe5;
 }
