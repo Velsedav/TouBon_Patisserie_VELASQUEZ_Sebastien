@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
   font-size: 62.5%;
@@ -16,6 +17,9 @@ h2 {
 }
 h3 {
   font-size: 2rem;
+}
+h4 {
+  font-size: 1.8rem;
 }
 a {
   text-decoration: none;
@@ -111,7 +115,7 @@ header img {
 /* Classes composantes */
 .BtnNav {
   padding: 0.8rem 1.6rem;
-  background-color: #ffd09b;
+  background-color: #ffc98b;
   color: white;
   border-radius: 2rem;
 }
@@ -166,4 +170,43 @@ header img {
 .h2Prod{
   color: #570026;
   text-align: center;
+  margin-bottom: 2rem;
+}
+.ContainerProd{
+  width: 500px;
+  height: 500px;
+  padding: 1rem 6rem;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.ContainerProd img{
+  border-radius: 0.8rem;
+}
+.DescriptionProd{
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  z-index: 1;
+  width: 300px;
+  background-color: #ffc98b;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  transform: translate(-25%,-25%);
+
+}
+.BckGrndProd{
+  background-color: #ffc98b;
+}
+
+/* Section Services */
+.CardService {
+  max-width: 300px;
+}
+.CardService img{
+  width: fit-content;
+  object-fit: cover;
 }
