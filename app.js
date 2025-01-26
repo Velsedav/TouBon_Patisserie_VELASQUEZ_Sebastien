@@ -62,7 +62,7 @@ function AfficheUnServices(services) {
   // retour rien
   let templateServices = `
       <div class="CardService">
-        <img src="assets/PlaceHolder.jpg" alt="" />
+        <img src="${services.image}" alt="" />
         <div>
           <h4>${services.nom}</h4>
           <p>${services.description}</p>
@@ -76,7 +76,7 @@ function AfficheAvantagesClients(avantagesClients) {
   // retour rien
   let templateAvantagesClients = `
      <div class="Card JstfCntr FlxColumn">
-     <p>${avantagesClients}</p>
+     <p class="avantages">${avantagesClients}</p>
    </div>
      `;
   document.querySelector("#sectionAvantagesClients").innerHTML +=

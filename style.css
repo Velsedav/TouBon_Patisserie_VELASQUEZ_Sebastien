@@ -4,6 +4,9 @@
 html {
   font-size: 62.5%;
 }
+:root{
+  --peach:#f0b877;
+}
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +54,7 @@ header img {
   color: #f4dbe5;
 }
 .BckGrndReview {
-  background-color: #ffc98b;
+  background-color: var(--peach);
 }
 /* #FFF7D1
 #FFB0B0
@@ -84,6 +87,9 @@ header img {
 }
 .JstfCntr {
   justify-content: center;
+}
+.MrgnAuto{
+  margin: auto
 }
 .AlgnItmCntr {
   align-items: center;
@@ -127,7 +133,7 @@ header img {
 /* Classes composantes */
 .BtnNav {
   padding: 0.8rem 1.6rem;
-  background-color: #ffc98b;
+  background-color: var(--peach);
   color: white;
   border-radius: 2rem;
 }
@@ -183,7 +189,7 @@ header img {
 }
 .BtnCTA {
   padding: 0.8rem 1.6rem;
-  background-color: #ffc98b;
+  background-color: var(--peach);
   color: white;
   border-radius: 2rem;
   font-size: 2rem;
@@ -191,7 +197,27 @@ header img {
 .BtnCTA:hover {
   background-color: #faa94c;
 }
-
+/* section avantages */
+.divider{
+  background-color: #570026;
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem; */
+  fill: #faa94c;
+}
+.divider img{
+  margin: auto;
+  display: inline-block;
+  fill: #f4dbe5;
+  /* color: #f0b877; */
+  width: 20%;
+padding-bottom: 4rem;
+filter: invert(95%) sepia(11%) saturate(744%) hue-rotate(287deg) brightness(100%) contrast(92%);
+}
+.avantages{
+  font-size: 2rem;
+  font-weight: 600;
+}
 /* Section produits */
 .h2Prod {
   color: #570026;
@@ -201,30 +227,30 @@ header img {
 .ContainerProd {
   width: 500px;
   height: 500px;
-  padding: 2rem;
+  padding: 1rem;
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  margin-right: 12rem;
+  margin-right: 1.2rem;
 }
 .ContainerProd img {
   border-radius: 0.8rem;
 }
 .DescriptionProd {
   position: absolute;
-  top: 65%;
-  left: 72%;
+  top: 60%;
+  right: 0;
   z-index: 1;
   width: 300px;
-  background-color: #ffc98b;
+  background-color: var(--peach);
   padding: 1.6rem;
   border-radius: 0.8rem;
   transform: translate(-25%, -25%);
 }
 .BckGrndProd {
-  background-color: #ffc98b;
+  background-color: var(--peach);
 }
 
 /* Section Services */

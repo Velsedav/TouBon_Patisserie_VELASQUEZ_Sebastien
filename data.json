@@ -37,14 +37,17 @@
   "services": [
     {
       "nom": "Gâteaux Sur Mesure",
+      "image":"assets/Bespoke-Cake.jpg",
       "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables."
     },
     {
       "nom": "Cours de Pâtisserie",
+      "image":"assets/pastry-class.jpg",
       "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations."
     },
     {
       "nom": "Service Traiteur",
+      "image":"assets/service_traiteur.jpg",
       "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions."
     }
   ],
